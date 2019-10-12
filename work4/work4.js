@@ -9,19 +9,24 @@ for(let i=1;i<=level;++i){
     for(let k=0;k<blank;++k){
         document.write('&nbsp;');
     }
+    //打印星星
     let star = i * 2 - 1
-    for(let j =0;j<star;++j){
+    for(let j=0;j<star;++j){
         document.write('*')
     }
+    //换行
     document.write("<br>")
 }
+
 let str = '<table border="1">'
-for(let i =1;i<10;++i){
-    str += '<str>'
+for(let i=1;i<10;++i){
+    str += '<tr>'
     for(var j=1;j<=i;++j){
-        str += '<tb>' + j + '*' + i + "=" + ( j * i) + '</tb>'
+        //；拼接单元格
+        str += '<td>' + j + '*' + i + '=' + ( j * i )
     }
-    str += '</tb>'
+    str += '</tr>'
 }
 str += '</table>'
-document.getElementById('table').innerHTML = str
+//设置div的html文档内容
+document.getElementById('table').innerHTML = str 
