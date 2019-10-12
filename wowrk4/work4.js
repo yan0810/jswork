@@ -10,7 +10,7 @@ for(let i=1;i<=level;++i){
         document.write('&nbsp;');
     }
     let star = i * 2 - 1
-    for(let j =0;<star;++j){
+    for(let j =0;j<star;++j){
         document.write('*')
     }
     document.write("<br>")
@@ -25,8 +25,3 @@ for(let i =1;i<10;++i){
 }
 str += '</table>'
 document.getElementById('table').innerHTML = str
-
-
-
-
-
