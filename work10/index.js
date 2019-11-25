@@ -24,12 +24,6 @@ document.getElementById('monkeyking').innerText = monkey[0]
 function stat() {
     let str=document.getElementById("str").value
     let obj={}
-    for(let i = 0;i<str.length;i++) {
-        if(!obj[str.charAt(i)]) {
-            obj[str.charAt(i)]=1;
-        }else{
-            obj[str.charAt(i)]++
-        }
-    }
+    
     document.getElementById('result').innerText = JSON.stringify(obj)
 }
