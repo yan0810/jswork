@@ -1,0 +1,309 @@
+{
+  "id": "57d16390-bb92-47d2-8107-4f86294db94b",
+  "version": "2.0",
+  "name": "work15",
+  "url": "http://127.0.0.1:8080",
+  "tests": [{
+    "id": "a6d90946-94b1-4260-a3c0-b355c189f52c",
+    "name": "购物车",
+    "commands": [{
+      "id": "5fca8975-3da3-4e87-9994-fd2db4ee7e12",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5a7bdd77-d7d5-4597-addb-f3146af887da",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "780x500",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fda58bc7-7d8b-4567-929f-a3d98dee7af0",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'work15')]",
+      "targets": [
+        ["linkText=work15 购物车", "linkText"],
+        ["css=a:nth-child(36)", "css:finder"],
+        ["xpath=//a[contains(text(),'work15 购物车')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'work15/index.html')]", "xpath:href"],
+        ["xpath=//a[18]", "xpath:position"],
+        ["xpath=//a[contains(.,'work15 购物车')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ded873cc-bd35-4699-a7ef-7b10919e5c83",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@type='checkbox']",
+      "targets": [
+        ["css=.cart-item:nth-child(2) .cart-check", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "95a40dd7-901b-4b5e-aeb4-036769d48f6f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cart-all",
+      "targets": [
+        ["css=.cart-unall", "css:finder"],
+        ["xpath=//span[3]", "xpath:position"],
+        ["xpath=//span[contains(.,'全不选')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e115e941-530e-4838-8365-9f15a96b6c55",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cart-item:nth-child(2) .cart-check",
+      "targets": [
+        ["css=.cart-item:nth-child(2) .cart-check", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "68a146ae-4826-4e36-81eb-f9b245295aa3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cart-item:nth-child(3) .cart-check",
+      "targets": [
+        ["css=.cart-item:nth-child(3) .cart-check", "css:finder"],
+        ["xpath=(//input[@type='checkbox'])[2]", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "29c81413-6de7-4c5f-86b2-f094c7ce48ef",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cart-item:nth-child(4) .cart-reduce",
+      "targets": [
+        ["css=.cart-item:nth-child(4) .cart-reduce", "css:finder"],
+        ["xpath=//tr[4]/td[4]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2bdee719-8098-45ee-9247-37bda186c371",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cart-item:nth-child(4) .cart-reduce",
+      "targets": [
+        ["css=.cart-item:nth-child(4) .cart-reduce", "css:finder"],
+        ["xpath=//tr[4]/td[4]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d5ab13d1-6dab-4931-b46e-9c7ca29c704b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cart-item:nth-child(5) .cart-reduce",
+      "targets": [
+        ["css=.cart-item:nth-child(5) .cart-reduce", "css:finder"],
+        ["xpath=//tr[5]/td[4]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3be38992-3296-458b-850a-d9bd27277483",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cart-item:nth-child(5) .cart-reduce",
+      "targets": [
+        ["css=.cart-item:nth-child(5) .cart-reduce", "css:finder"],
+        ["xpath=//tr[5]/td[4]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "72327258-f38f-4efd-a73c-52d89f0be98f",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "978b95fd-db5c-4f10-a3d8-14e3710051ca",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cart-item:nth-child(4) .cart-del",
+      "targets": [
+        ["css=.cart-item:nth-child(4) .cart-del", "css:finder"],
+        ["xpath=//tr[4]/td[6]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fca611a3-94da-4a53-aca7-e83e42881f5a",
+      "comment": "",
+      "command": "assertConfirmation",
+      "target": "您确定要删除此商品吗？",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c07cda9a-c8ec-4597-93e6-50bd02eb7083",
+      "comment": "",
+      "command": "webdriverChooseOkOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5230a278-2a32-4536-b1c7-0e8fa79d72d0",
+      "comment": "总计49元",
+      "command": "assertText",
+      "target": "css=.cart-total-price",
+      "targets": [
+        ["css=.cart-total-price", "css:finder"],
+        ["xpath=//span[2]/span", "xpath:position"]
+      ],
+      "value": "49.00"
+    }, {
+      "id": "ca698ce9-c73c-4812-bb48-71a35b2f1d70",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cart-all",
+      "targets": [
+        ["css=.cart-all", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'全选')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a94b4a0f-084b-4cb1-a0de-54af5a59f1c6",
+      "comment": "总计325元",
+      "command": "assertText",
+      "target": "css=.cart-total-price",
+      "targets": [
+        ["css=.cart-total-price", "css:finder"],
+        ["xpath=//span[2]/span", "xpath:position"]
+      ],
+      "value": "325.00"
+    }, {
+      "id": "ef5b4ab6-ed5b-450c-9518-13dc3da2130b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b5c55676-330b-4bea-85d5-99932c0d637e",
+    "name": "购物车全不选",
+    "commands": [{
+      "id": "190c7047-ce0b-4ec6-ab27-c87f22a1a3bc",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9c0c1395-e55b-4602-94c2-f63bea6b49cb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "780x500",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8f90762e-7d3e-4a98-9816-eda6fb82551a",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'work15')]",
+      "targets": [
+        ["linkText=work15 购物车", "linkText"],
+        ["css=a:nth-child(36)", "css:finder"],
+        ["xpath=//a[contains(text(),'work15 购物车')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'work15/index.html')]", "xpath:href"],
+        ["xpath=//a[18]", "xpath:position"],
+        ["xpath=//a[contains(.,'work15 购物车')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a7bca6cb-4c8c-4866-94cb-84215ffccf3d",
+      "comment": "总价570元",
+      "command": "assertText",
+      "target": "css=.cart-total-price",
+      "targets": [
+        ["css=.cart-total-price", "css:finder"],
+        ["xpath=//span[2]/span", "xpath:position"]
+      ],
+      "value": "570.00"
+    }, {
+      "id": "9697ea8d-cc34-4084-8d2e-000b79216f46",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'全不选')]",
+      "targets": [
+        ["css=.cart-unall", "css:finder"],
+        ["xpath=//span[3]", "xpath:position"],
+        ["xpath=//span[contains(.,'全不选')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8702fe4e-53aa-413a-b54d-609483f8a29a",
+      "comment": "中级上册没选中",
+      "command": "assertNotChecked",
+      "target": "css=.cart-item:nth-child(2) .cart-check",
+      "targets": [
+        ["css=.cart-item:nth-child(2) .cart-check", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b89489a-c45c-48a8-a07a-a4be7f50c0ca",
+      "comment": "中级下册没选中",
+      "command": "assertNotChecked",
+      "target": "css=.cart-item:nth-child(3) .cart-check",
+      "targets": [
+        ["css=.cart-item:nth-child(3) .cart-check", "css:finder"],
+        ["xpath=(//input[@type='checkbox'])[2]", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac3b26be-b8e7-4bfa-a629-12386bb1543c",
+      "comment": "高级上册没选中",
+      "command": "assertNotChecked",
+      "target": "css=.cart-item:nth-child(4) .cart-check",
+      "targets": [
+        ["css=.cart-item:nth-child(4) .cart-check", "css:finder"],
+        ["xpath=(//input[@type='checkbox'])[3]", "xpath:attributes"],
+        ["xpath=//tr[4]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3b5e299-27e5-4c29-92f2-0e8bf0e2bf78",
+      "comment": "高级上册没选中",
+      "command": "assertNotChecked",
+      "target": "css=.cart-item:nth-child(5) .cart-check",
+      "targets": [
+        ["css=.cart-item:nth-child(5) .cart-check", "css:finder"],
+        ["xpath=(//input[@type='checkbox'])[4]", "xpath:attributes"],
+        ["xpath=//tr[5]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "46d97c2c-78e3-4455-8072-24e8eeca899c",
+      "comment": "总价为零",
+      "command": "assertText",
+      "target": "css=.cart-total-price",
+      "targets": [
+        ["css=.cart-total-price", "css:finder"],
+        ["xpath=//span[2]/span", "xpath:position"]
+      ],
+      "value": "0.00"
+    }]
+  }],
+  "suites": [{
+    "id": "d2b97319-ae7a-47cd-a59e-eedc5b22f666",
+    "name": "testwork15",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a6d90946-94b1-4260-a3c0-b355c189f52c", "b5c55676-330b-4bea-85d5-99932c0d637e"]
+  }],
+  "urls": ["http://127.0.0.1:8080/"],
+  "plugins": []
+}
