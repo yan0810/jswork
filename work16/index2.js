@@ -23,9 +23,11 @@ function getStyle(obj, attr) {
         return window.getComputedStyle(obj, null)[attr];
     } else {
         return obj.currentStyle[attr];
+        }
     }
-}
-var obj = document.getElementById('box');
-obj.onclick = function() {
-    animate(obj, {'left':200, 'top': 50});
-};
+    var obj = document.getElementById('box');
+    obj.onclick = function() {
+        var left = parseInt(Math.random() * window.innerWidth);
+        var top = parseInt(Math.random() * window.innerHeight);
+        animate(obj, {'left': top, 'top': left});
+    };
