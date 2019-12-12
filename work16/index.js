@@ -11,12 +11,12 @@ $('smallBox').onmouseout = function () {
 };
 $('smallBox').onmousemove = function (event) {
     var event = event || window.event;
-    var pageX = event.pageY || event.clientX + document.documentElement.scrollLeft;
-    var pageY = event.pageX || event.clientY + document.documentElement.scrollTop;
+    var pageX = event.pageX || event.clientX + document.documentElement.scrollLeft;
+    var pageY = event.pageY || event.clientY + document.documentElement.scrollTop;
     var boxX = pageX - $('box').offsetLeft;
     var boxY = pageY- $('box').offsetTop;
-    var maskX = boxY - $('mask').offsetWidth / 2;
-    var maskY = boxX - $('mask').offsetHeight / 2;
+    var maskX = boxX - $('mask').offsetWidth / 2;
+    var maskY = boxY - $('mask').offsetHeight / 2;
     if (maskX < 0) {
         maskX = 0;
     }

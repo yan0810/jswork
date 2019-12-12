@@ -27,5 +27,5 @@ function getStyle(obj, attr) {
 }
 var obj = document.getElementById('box');
 obj.onclick = function() {
-    animate(obj, {'left':200, 'top':50});
+    animate(obj, {'left':200, 'top': 50});
 };
