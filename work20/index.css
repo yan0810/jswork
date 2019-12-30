@@ -1,0 +1,49 @@
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    text-align: center;
+    width: 150px;
+}
+
+div {
+    width: 150px;
+    border: 1px solid midnightblue;
+    margin: 10px;
+}
+
+div li {
+    background: royalblue;
+    border-bottom:1px solid silver;
+}
+
+div li a {
+    text-decoration: none;
+    color: silver;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+}
+
+div li a:hover{
+    text-decoration: underline;
+}
+
+.wrap {
+    width: 150px;
+    display: none;
+}
+
+.wrap li {
+    background: silver;
+    margin: 0;
+}
+
+.wrap li a{
+    color: midnightblue;
+    font-size: 12px;
+}
